@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F6BE73D2B0B7979008BF05D /* PasswordExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6BE73C2B0B7979008BF05D /* PasswordExtension.swift */; };
+		FB03EA0A25BB2FE800799A72 /* PasswordDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03EA0925BB2FE800799A72 /* PasswordDetail.swift */; };
+		FB2C0FAD25BB158E000A5101 /* PasswordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C0FAC25BB158E000A5101 /* PasswordList.swift */; };
+		FB2C0FCF25BB234F000A5101 /* PasswordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C0FCE25BB234F000A5101 /* PasswordRow.swift */; };
+		FB41274425C2FB7500C00C93 /* EditPasswordForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41274325C2FB7500C00C93 /* EditPasswordForm.swift */; };
+		FB4CB5AF25BAFCDD00E527F6 /* kpassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CB5AE25BAFCDD00E527F6 /* kpassApp.swift */; };
+		FB4CB5B125BAFCDD00E527F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CB5B025BAFCDD00E527F6 /* ContentView.swift */; };
+		FB4CB5B325BAFCDF00E527F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4CB5B225BAFCDF00E527F6 /* Assets.xcassets */; };
+		FB4CB5B625BAFCDF00E527F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4CB5B525BAFCDF00E527F6 /* Preview Assets.xcassets */; };
+		FB4CB5B825BAFCDF00E527F6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CB5B725BAFCDF00E527F6 /* Persistence.swift */; };
+		FB4CB5BB25BAFCDF00E527F6 /* kpass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB4CB5B925BAFCDF00E527F6 /* kpass.xcdatamodeld */; };
+		FB864A9A25C0451C00633F3C /* AddPasswordForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB864A9925C0451C00633F3C /* AddPasswordForm.swift */; };
+		FB8F3D0025C077A000E6A246 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F3CFF25C077A000E6A246 /* GradientButtonStyle.swift */; };
+		FB8F3D0F25C081F500E6A246 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F3D0E25C081F500E6A246 /* SettingsPage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB4CB5C225BAFCDF00E527F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB4CB5A325BAFCDD00E527F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB4CB5AA25BAFCDD00E527F6;
+			remoteInfo = kpass;
+		};
+		FB4CB5CD25BAFCDF00E527F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB4CB5A325BAFCDD00E527F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB4CB5AA25BAFCDD00E527F6;
+			remoteInfo = kpass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F6BE73C2B0B7979008BF05D /* PasswordExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordExtension.swift; sourceTree = "<group>"; };
+		FB03EA0925BB2FE800799A72 /* PasswordDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDetail.swift; sourceTree = "<group>"; };
+		FB2C0FAC25BB158E000A5101 /* PasswordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordList.swift; sourceTree = "<group>"; };
+		FB2C0FCE25BB234F000A5101 /* PasswordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRow.swift; sourceTree = "<group>"; };
+		FB41274325C2FB7500C00C93 /* EditPasswordForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordForm.swift; sourceTree = "<group>"; };
+		FB4CB5AB25BAFCDD00E527F6 /* kpass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kpass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4CB5AE25BAFCDD00E527F6 /* kpassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kpassApp.swift; sourceTree = "<group>"; };
+		FB4CB5B025BAFCDD00E527F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB4CB5B225BAFCDF00E527F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB4CB5B525BAFCDF00E527F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB4CB5B725BAFCDF00E527F6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FB4CB5BA25BAFCDF00E527F6 /* kpass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kpass.xcdatamodel; sourceTree = "<group>"; };
+		FB4CB5BC25BAFCDF00E527F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4CB5C125BAFCDF00E527F6 /* kpassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kpassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4CB5CC25BAFCDF00E527F6 /* kpassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kpassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB864A9925C0451C00633F3C /* AddPasswordForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordForm.swift; sourceTree = "<group>"; };
+		FB8F3CFF25C077A000E6A246 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
+		FB8F3D0E25C081F500E6A246 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB4CB5A825BAFCDD00E527F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4CB5BE25BAFCDF00E527F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4CB5C925BAFCDF00E527F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB2C0FC025BB1FC1000A5101 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB8F3D0D25C081E500E6A246 /* Settings */,
+				FB2C0FC925BB2001000A5101 /* Passwords */,
+				FB2C0FC825BB1FF7000A5101 /* Helpers */,
+				FB4CB5B025BAFCDD00E527F6 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB2C0FC725BB1FD3000A5101 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB4CB5B925BAFCDF00E527F6 /* kpass.xcdatamodeld */,
+				FB4CB5B725BAFCDF00E527F6 /* Persistence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB2C0FC825BB1FF7000A5101 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FB8F3CFF25C077A000E6A246 /* GradientButtonStyle.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FB2C0FC925BB2001000A5101 /* Passwords */ = {
+			isa = PBXGroup;
+			children = (
+				FB2C0FAC25BB158E000A5101 /* PasswordList.swift */,
+				FB03EA0925BB2FE800799A72 /* PasswordDetail.swift */,
+				FB2C0FCE25BB234F000A5101 /* PasswordRow.swift */,
+				FB864A9925C0451C00633F3C /* AddPasswordForm.swift */,
+				FB41274325C2FB7500C00C93 /* EditPasswordForm.swift */,
+			);
+			path = Passwords;
+			sourceTree = "<group>";
+		};
+		FB4CB5A225BAFCDD00E527F6 = {
+			isa = PBXGroup;
+			children = (
+				3F6BE73C2B0B7979008BF05D /* PasswordExtension.swift */,
+				FB4CB5AD25BAFCDD00E527F6 /* kpass */,
+				FB4CB5AC25BAFCDD00E527F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB4CB5AC25BAFCDD00E527F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB4CB5AB25BAFCDD00E527F6 /* kpass.app */,
+				FB4CB5C125BAFCDF00E527F6 /* kpassTests.xctest */,
+				FB4CB5CC25BAFCDF00E527F6 /* kpassUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB4CB5AD25BAFCDD00E527F6 /* kpass */ = {
+			isa = PBXGroup;
+			children = (
+				FB2C0FC725BB1FD3000A5101 /* Model */,
+				FB2C0FC025BB1FC1000A5101 /* Views */,
+				FB4CB5AE25BAFCDD00E527F6 /* kpassApp.swift */,
+				FB4CB5B225BAFCDF00E527F6 /* Assets.xcassets */,
+				FB4CB5BC25BAFCDF00E527F6 /* Info.plist */,
+				FB4CB5B425BAFCDF00E527F6 /* Preview Content */,
+			);
+			path = kpass;
+			sourceTree = "<group>";
+		};
+		FB4CB5B425BAFCDF00E527F6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB4CB5B525BAFCDF00E527F6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB8F3D0D25C081E500E6A246 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FB8F3D0E25C081F500E6A246 /* SettingsPage.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB4CB5AA25BAFCDD00E527F6 /* kpass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4CB5D525BAFCDF00E527F6 /* Build configuration list for PBXNativeTarget "kpass" */;
+			buildPhases = (
+				FB4CB5A725BAFCDD00E527F6 /* Sources */,
+				FB4CB5A825BAFCDD00E527F6 /* Frameworks */,
+				FB4CB5A925BAFCDD00E527F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kpass;
+			productName = kpass;
+			productReference = FB4CB5AB25BAFCDD00E527F6 /* kpass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB4CB5C025BAFCDF00E527F6 /* kpassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4CB5D825BAFCDF00E527F6 /* Build configuration list for PBXNativeTarget "kpassTests" */;
+			buildPhases = (
+				FB4CB5BD25BAFCDF00E527F6 /* Sources */,
+				FB4CB5BE25BAFCDF00E527F6 /* Frameworks */,
+				FB4CB5BF25BAFCDF00E527F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB4CB5C325BAFCDF00E527F6 /* PBXTargetDependency */,
+			);
+			name = kpassTests;
+			productName = kpassTests;
+			productReference = FB4CB5C125BAFCDF00E527F6 /* kpassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB4CB5CB25BAFCDF00E527F6 /* kpassUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4CB5DB25BAFCDF00E527F6 /* Build configuration list for PBXNativeTarget "kpassUITests" */;
+			buildPhases = (
+				FB4CB5C825BAFCDF00E527F6 /* Sources */,
+				FB4CB5C925BAFCDF00E527F6 /* Frameworks */,
+				FB4CB5CA25BAFCDF00E527F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB4CB5CE25BAFCDF00E527F6 /* PBXTargetDependency */,
+			);
+			name = kpassUITests;
+			productName = kpassUITests;
+			productReference = FB4CB5CC25BAFCDF00E527F6 /* kpassUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB4CB5A325BAFCDD00E527F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					FB4CB5AA25BAFCDD00E527F6 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					FB4CB5C025BAFCDF00E527F6 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = FB4CB5AA25BAFCDD00E527F6;
+					};
+					FB4CB5CB25BAFCDF00E527F6 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = FB4CB5AA25BAFCDD00E527F6;
+					};
+				};
+			};
+			buildConfigurationList = FB4CB5A625BAFCDD00E527F6 /* Build configuration list for PBXProject "kpass" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB4CB5A225BAFCDD00E527F6;
+			productRefGroup = FB4CB5AC25BAFCDD00E527F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB4CB5AA25BAFCDD00E527F6 /* kpass */,
+				FB4CB5C025BAFCDF00E527F6 /* kpassTests */,
+				FB4CB5CB25BAFCDF00E527F6 /* kpassUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB4CB5A925BAFCDD00E527F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4CB5B625BAFCDF00E527F6 /* Preview Assets.xcassets in Resources */,
+				FB4CB5B325BAFCDF00E527F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4CB5BF25BAFCDF00E527F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4CB5CA25BAFCDF00E527F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB4CB5A725BAFCDD00E527F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4CB5BB25BAFCDF00E527F6 /* kpass.xcdatamodeld in Sources */,
+				FB2C0FCF25BB234F000A5101 /* PasswordRow.swift in Sources */,
+				FB4CB5B825BAFCDF00E527F6 /* Persistence.swift in Sources */,
+				FB864A9A25C0451C00633F3C /* AddPasswordForm.swift in Sources */,
+				FB2C0FAD25BB158E000A5101 /* PasswordList.swift in Sources */,
+				FB4CB5B125BAFCDD00E527F6 /* ContentView.swift in Sources */,
+				3F6BE73D2B0B7979008BF05D /* PasswordExtension.swift in Sources */,
+				FB8F3D0025C077A000E6A246 /* GradientButtonStyle.swift in Sources */,
+				FB03EA0A25BB2FE800799A72 /* PasswordDetail.swift in Sources */,
+				FB41274425C2FB7500C00C93 /* EditPasswordForm.swift in Sources */,
+				FB4CB5AF25BAFCDD00E527F6 /* kpassApp.swift in Sources */,
+				FB8F3D0F25C081F500E6A246 /* SettingsPage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4CB5BD25BAFCDF00E527F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4CB5C825BAFCDF00E527F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB4CB5C325BAFCDF00E527F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB4CB5AA25BAFCDD00E527F6 /* kpass */;
+			targetProxy = FB4CB5C225BAFCDF00E527F6 /* PBXContainerItemProxy */;
+		};
+		FB4CB5CE25BAFCDF00E527F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB4CB5AA25BAFCDD00E527F6 /* kpass */;
+			targetProxy = FB4CB5CD25BAFCDF00E527F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FB4CB5D325BAFCDF00E527F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB4CB5D425BAFCDF00E527F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB4CB5D625BAFCDF00E527F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"kpass/Preview Content\"";
+				DEVELOPMENT_TEAM = 4K69Q2QC3K;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = kpass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kiril.kpass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB4CB5D725BAFCDF00E527F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"kpass/Preview Content\"";
+				DEVELOPMENT_TEAM = 4K69Q2QC3K;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = kpass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kiril.kpass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB4CB5D925BAFCDF00E527F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4K69Q2QC3K;
+				INFOPLIST_FILE = kpassTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kiril.kpassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kpass.app/kpass";
+			};
+			name = Debug;
+		};
+		FB4CB5DA25BAFCDF00E527F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4K69Q2QC3K;
+				INFOPLIST_FILE = kpassTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kiril.kpassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kpass.app/kpass";
+			};
+			name = Release;
+		};
+		FB4CB5DC25BAFCDF00E527F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4K69Q2QC3K;
+				INFOPLIST_FILE = kpassUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kiril.kpassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kpass;
+			};
+			name = Debug;
+		};
+		FB4CB5DD25BAFCDF00E527F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4K69Q2QC3K;
+				INFOPLIST_FILE = kpassUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kiril.kpassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kpass;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB4CB5A625BAFCDD00E527F6 /* Build configuration list for PBXProject "kpass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4CB5D325BAFCDF00E527F6 /* Debug */,
+				FB4CB5D425BAFCDF00E527F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB4CB5D525BAFCDF00E527F6 /* Build configuration list for PBXNativeTarget "kpass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4CB5D625BAFCDF00E527F6 /* Debug */,
+				FB4CB5D725BAFCDF00E527F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB4CB5D825BAFCDF00E527F6 /* Build configuration list for PBXNativeTarget "kpassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4CB5D925BAFCDF00E527F6 /* Debug */,
+				FB4CB5DA25BAFCDF00E527F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB4CB5DB25BAFCDF00E527F6 /* Build configuration list for PBXNativeTarget "kpassUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4CB5DC25BAFCDF00E527F6 /* Debug */,
+				FB4CB5DD25BAFCDF00E527F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB4CB5B925BAFCDF00E527F6 /* kpass.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB4CB5BA25BAFCDF00E527F6 /* kpass.xcdatamodel */,
+			);
+			currentVersion = FB4CB5BA25BAFCDF00E527F6 /* kpass.xcdatamodel */;
+			path = kpass.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FB4CB5A325BAFCDD00E527F6 /* Project object */;
+}
