@@ -1,74 +1,44 @@
-# kpass (work in progress!)
-kpass is a simple-to-use password manager app. I built it for two reasons:
 
-1. To try native app development and Swift.
+# KeyGuardian – A simple-to-use password manager app
 
-2. I don't like any of the existing password managers. I wanted to have something that I can use quickly and without an internet connection to ensure that my data is not going anywhere (except for Apple, in this case).
-
-kpass utilises Apple's Core Data framework to ensure persistence of your data even when the app is closed. It also uses FaceID for locking the app away from unwanted users. If the app is put into background, it will immediately lock itself.
-
-Please note, the UI, and some of the features (e.g. the Settings tab) are still unfinished. 
-
-## Tech Stack
-
-| Technology          | Use                               |
-| ------------------- | --------------------------------- |
-| Swift               | Language                          |
-| SwiftUI             | Creating views                    |
-| Core Data           | Data persistence on flash storage |
-| LocalAuthentication | Locking the app behind FaceID     |
+Managing passwords securely in an increasingly digital world is challenging. The aim of the project is to develop an easy-to-use iOS app to manage all your passwords. Proposed methodology includes biometric authentication, encryption algorithms, real-time assessments, and proactive notifications. The value proposition is the reduced burden of managing passwords manually and keeping passwords secure. Expected outcome is the complete development of the app with adequate testing and potential deployment in the app store simplifying password management for everyone.
 
 
-## Setup
 
-1. [Install Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)  
-2. While that is downloading (it's a big one), clone this repo.  
-3. Open the repo with Xcode.  
+## Problem Statement
 
-### If You Have an iPhone with FaceID
-1. Connect it to your computer and choose it as the simulator device.  
-<img src="screenshots/iphonesim.png" width="600">  
-2. Build the project. 
-3. Accept the FaceID request.  
-4. Click Unlock Password and use FaceID.  
+Users face the challenge of securely managing numerous passwords with existing solutions often
+compromising security or lacking user-friendly interfaces. KeyGuardian aims to address these issues by offering a sophisticated, secure, and intuitive password management solution, enhancing both security and user experience.
+## User Stories
 
-### If You Don't Have an iPhone with FaceID
-1. Choose iPhone X or later.  
-<img src="screenshots/xcodesim.png" width="600">  
-2. Build the project.  
-3. Got to Feature > FaceID > Enrolled.  
-<img src="screenshots/enrolled.png" width="600">  
-4. Click Unlock Passwords button.  
-5. Go to Features > FaceID > Matching Face.  
-<img src="screenshots/matchingface.png" width="600">  
+1. As a user I want to effortlessly access my password manager using Face ID for a seamless and secure experience.
+2. As a user I need the ability to add, edit, view, and copy passwords easily to efficiently manage my diverse online accounts.
+3. As a user I want the assurance of offline accessibility, ensuring I can access my passwords anytime, even without an internet connection.
+4. As a user I desire a strong password suggestions/generator feature to assist me in creating and maintaining secure and unique passwords.
+5. As a user I need a password strength checker to evaluate and improve the security of my existing passwords.
+6. As a user I expect timely alerts for passwords nearing expiration, enhancing my proactive approach to maintaining digital security.
 
-## How to Use
 
-If you don't have any passwords, you will be greeted with this screen on the All Passwords page:   
-<img src="screenshots/empty.png" width="300">  
+## Testing
+### GUI Testing
+• All Passwords tab must show passwords under two sections, valid and expired (if not empty).
 
-### Adding a Password
+• New Password tab must show a form for adding a new password. It should also contain a password generator button, a password strength checker and ability to input expiration period (if it exists).
 
-Go to the New Password tab, and fill in the form:     
-<img src="screenshots/addpwd1.png" width="300">  
+• Password details should show all necessary details including expiration date (if it exists).
 
-Note: the Add Password button will only show up once all the fields are not blank. You can also use the Show toggle to see what you're typing.
+• Edit password page shows password edit form.
 
-### Using Your Passwords
+### Features testing
+1. User opens the app. User unlocks app using FaceID. User views valid and expired passwords.
+2. User unlocks the app. User opens New Password tab and fills in the form. User opens All Passwords tab and sees updated list.
+3. User unlocks the app. User clicks on a password to show details. User can view and copy password. User clicks edit button to update password. User navigates back to All Passwords tab and sees updated password.
+4. User unlocks the app. User opens New Password tab and fills in the form. When typing the password, user sees the Password strength checker label change from Weak, to Moderate to Strong.
+5. User unlocks the app. User opens New Password tab and fills in the form. User uses the Generate a strong password button to generate a random strong password. 
 
-Once you have something saved, you can go back to the All Passwords tab, where you will find your list.  
-<img src="screenshots/allpwds.png" width="300">  
+## Conclusion
+We have successfully created a password manager app with functionalities to add, edit, view and copy passwords. It is secured through FaceID and contains a password strength checker and strong password generator.
 
-Tap on one of the items, and you will be taken to a detail screen:  
-<img src="screenshots/google.png" width="300">       
-
-On this screen, you have three buttons: 
-1. The eye button will show or hide your password.  
-<img src="screenshots/show.png" width="150">
-2. The copy button will copy the password to your clipboard.   
-3. The pencil button will take you to the Edit Password page.   
-<img src="screenshots/editpwd.png" width="250">
-
-## Bugs
-- All passwords page -> Title not showing 
-- Padding in PasswordDetail wrong 
+## Future scope: 
+- Add functionality for alerting the user as password nears expiry.
+- Add logic for encryption and decryption of passwords for increased security.
